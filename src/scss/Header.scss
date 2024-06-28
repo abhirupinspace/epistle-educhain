@@ -1,0 +1,23 @@
+.header{
+    font-family: "Josefin Sans", sans-serif;
+    width: 100vw;
+    height: 9vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+    .title{
+        margin-left: 3vw;
+        font-size: 2.8vw;
+        color: #FFD101ff;
+    }
+    .buttons{
+        margin-left: 50vw;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+}

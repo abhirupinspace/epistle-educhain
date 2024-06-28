@@ -1,0 +1,38 @@
+.dashboard{
+    background-image:url('../assets/bg.png') ;
+.fullpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+    font-family: "Josefin Sans", sans-serif;
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        height: 100vh;
+        row-gap: 4vh;
+        .lineChart{
+            width: 45vw;
+            height: 40vh;
+        }
+    }
+    .right{
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+        
+        .smallContainers{
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            column-gap: 2.5vw;
+        }
+    }
+}
+}

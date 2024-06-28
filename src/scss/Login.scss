@@ -1,0 +1,56 @@
+
+.fullpageLogin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    background-image:url('../assets/bg.png') ;
+    .leftLogin {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        color: #000;
+        // border-right: #000 7px solid;
+
+        .nameLogin {
+            font-size: 10vw;
+            font-weight: 300;
+        }
+
+        .taglineLogin {
+            line-height: 8vh;
+            font-size: 5vh;
+            font-weight: 300;
+            justify-content: left;
+        }
+    }
+
+    .rightLogin {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+
+        button {
+            margin-left: 5vw;
+            width: 20vw;
+            height: 10vh;
+            color: #FFD101ff;
+            background-color: #000;
+            border-radius: 20px;
+            font-size: 2vw;
+        }
+
+        button:hover{
+            color: #000000;
+            background-color: #FFD101ff;;
+        }
+    }
+}

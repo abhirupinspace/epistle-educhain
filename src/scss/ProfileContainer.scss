@@ -1,0 +1,34 @@
+.profileContainer {
+    display: flex;
+    width: 100vw;
+    font-family: "Josefin Sans", sans-serif;
+
+    .profileLeft {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+
+        .profileDetailsUpper {
+            display: flex;
+            width: 100%;
+
+            .upperLeft {
+                display: flex;
+                flex-direction: column;
+
+                .name {
+                    font-size: 4rem;
+                }
+
+            }
+
+            .upperRightImg {
+                width: 300px;
+            }
+        }
+    }
+
+    .profileRight {
+        width: 50vw;
+    }
+}

@@ -1,0 +1,66 @@
+.fullForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  .submission-form {
+    font-family: "Josefin Sans", sans-serif;
+    width:500px;
+    height: 73vh;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color:  #f1f1f1;
+    color: #000;
+  
+    .form-group {
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      textarea {
+        height: 50px;
+        resize: vertical;
+      }
+    }
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding-top: 4vh;
+    column-gap: 50px;
+    button {
+      width: 15vw;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1vw;
+      &:first-of-type {
+        background-color: #000;
+        color: #fff;
+      }
+  
+      &:last-of-type {
+        background-color: #FFD101ff;
+        color: #000;
+      }
+    }
+  }
+  }
