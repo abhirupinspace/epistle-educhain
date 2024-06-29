@@ -201,9 +201,6 @@ const SubmissionForm: React.FC = () => {
             time: '',
             uploadMedia: ''
         });
-
-        // navigate to the previous page or a specific route
-        navigate('/');
     };
 
     return (

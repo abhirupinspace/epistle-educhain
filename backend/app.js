@@ -11,9 +11,19 @@ app.use('/api', articleRoutes);
 // app.use('/api', reviewRoutes);
 // app.use('/api', userRoutes);
 
+app.use((req, res, next) => {
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
+
 app.use((err, req, res, next) => {
-    console.log(err);
-    res.status(500).send('Something broke!');
+    res.status(err.status || 500);
+    res.json({
+        error: {
+            message: err.message
+        }
+    });
 });
 
 module.exports = app;

@@ -5,11 +5,11 @@ import ShowNewsSmall from "../showNews/ShowNewsSmall";
 
 const ArticleFarm: React.FC = () => {
     return (
-        <div className="profile">
+        <div className="articleFarm">
             <Header />
-            <div className="profileContainer">
+            <div className="articleFarmContainer">
                 <div className="upperContainer">
-                    <div className="profileTitle">
+                    <div className="articleFarmTitle">
                         ARTICLE <br /> FARM
                     </div>
                     <div className="sorting">
@@ -18,11 +18,13 @@ const ArticleFarm: React.FC = () => {
                             <input type="search" name="search" id="search" />
                         </div>
                         <div className="sort">
-                            <label htmlFor="sort">Sort</label>
+                            <label htmlFor="sort">Sort:</label>
                             <select id="sort" name="Sort">
                                 <option value="politics">Politics</option>
                                 <option value="sports">Sports</option>
                                 <option value="finance">Finance</option>
+                                <option value="science">Science</option>
+                                <option value="entertainment">Entertainment</option>
                             </select>
                         </div>
                     </div>
