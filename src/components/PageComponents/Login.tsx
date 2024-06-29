@@ -7,25 +7,34 @@ import { ConnectedWalletDetails } from 'thirdweb/dist/types/react/web/ui/Connect
 import { client } from '../../client';
 import Dashboard from './Dashboard';
 // import { ConnectedWalletDetails } from 'thirdweb/dist/types/react/web/ui/ConnectWallet/Details';
+import { FaArrowRight } from "react-icons/fa";
 
-
-
+import { useNavigate } from 'react-router-dom';
 
 const Login: React.FC = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+      
+          navigate('/dashboard');
+      
+  };
+
+
   return (
     <ThirdwebProvider>
     <div className='fullpageLogin'>
       <div className="leftLogin">
-        <div className="nameLogin">AALOO</div>
+        <div className="nameLogin">EPISTLE.</div>
         <div className="taglineLogin">
-          VERIFY NEWS
-          <br/>WIN REWARDS
+        Tokenized Trust in Every Story
         </div>
       </div>
       <div className="rightLogin">
-        {/* <button>Login</button> */}
         <ConnectButton client={client}
         onConnect={Dashboard}/>
+        <button className='btn2' onClick={handleClick}> Continue <FaArrowRight/> </button>
       </div>
     </div></ThirdwebProvider>
   );

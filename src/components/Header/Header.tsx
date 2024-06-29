@@ -11,9 +11,8 @@ import { UserWalletStatus } from 'thirdweb/dist/types/wallets/in-app/core/authen
 const Header: React.FC = () => {
   return (
     <div className='header'>
-      <div className='title'>AALOO</div>
+      <div className='title'>EPISTLE.</div>
       <div className='buttons'>
-        <Button name='My DAO' />
         <Button name='Profile' />
         <ConnectButton client={client} />
       </div>

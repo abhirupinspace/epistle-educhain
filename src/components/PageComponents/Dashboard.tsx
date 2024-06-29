@@ -26,8 +26,8 @@ const Dashboard: React.FC = () => {
             {
               label: 'Engagement',
               data: engagementData.map((data) => data.revenue),
-              backgroundColor: 'rgba(0, 0, 0, 0)',
-              borderColor: '#FFD101ff',
+              backgroundColor: '#0003FF',
+              borderColor: '#000',
               fill: false
             },
           ],

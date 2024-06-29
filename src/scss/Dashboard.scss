@@ -1,13 +1,13 @@
 .dashboard {
-    background-image: url('../assets/bg.png');
-    overflow: hidden;
+    background-image: url(../assets/2.png);
+    background-size: cover;
+    
     .fullpage {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
         height: 88vh;
-
         font-family: "Josefin Sans", sans-serif;
 
         .left {
@@ -21,10 +21,13 @@
             .lineChart {
                 display: grid;
                 place-items: center;
-
-                width: 45vw;
-                height: 40vh;
-
+                backdrop-filter: blur(10px);
+                canvas{
+                    color: white;
+                    background-color: #ffffff20;
+                    width: 40vw;
+                    height: 35vh;
+                }
             }
         }
 

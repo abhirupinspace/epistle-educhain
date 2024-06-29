@@ -207,7 +207,7 @@ const SubmissionForm: React.FC = () => {
         <div className='fullForm'>
             <form className="submission-form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Title</label>
+                    <label>Heading</label>
                     <input
                         type="text"
                         name="heading"

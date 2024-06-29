@@ -17,10 +17,11 @@
 
 @layer base {
   body {
-    @apply bg-zinc-950 text-neutral-200;
-    *{
+    @apply bg-blue-600 text-neutral-200;
+    * {
       padding: 0px;
       margin: 0px;
+      overflow: hidden;
     }
   }
 }

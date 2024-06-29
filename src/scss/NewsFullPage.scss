@@ -1,10 +1,11 @@
 .newsFullPage{
-    background-image: url(../assets/bg.png);
+    background-image: url(../assets/4.png);
     .newspage{
         width: 100vw;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Inter", sans-serif;
         display: flex;
         min-height: 100vh;
+        color: #000;
         .left{
             display: flex;
             flex-direction: column;
@@ -23,7 +24,11 @@
             }
         }
         .right{
-
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
         }
     }
 }

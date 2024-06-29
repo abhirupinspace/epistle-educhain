@@ -1,29 +1,16 @@
 .button{
-    font-size: 1.5vw;
-    font-weight: 100;
-    padding:  1vh 1.5vw;
-    border: 2px #000 solid;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    padding:  0.25rem 2rem;
     border-radius: 10px;
     background-color: #f1f1f1;
     color: #000;
-    box-shadow:5px 5px rgba(0, 0, 0);
     transition: all 1s ease;
 }
 .button:hover{
     cursor: pointer;
-    background-color: #FFD101ff;
-    color: #000;
-}
-.css-1c5w4lf{
-    font-size: 1.5vw;
-    font-weight: 100;
-    padding:  1vh 1.5vw;
-    border: 2px #000 solid;
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    color: #000;
-    box-shadow:5px 5px rgba(0, 0, 0);
-    transition: all 1s ease;
+    background-color: #EFEFEF;
+    color: #0003FF;
 }
 
 

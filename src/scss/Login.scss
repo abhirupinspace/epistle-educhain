@@ -5,21 +5,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Josefin Sans", sans-serif;
-    background-image:url('../assets/bg.png') ;
+    font-family: "Inter", sans-serif;
+    color: #EFEFEF;
+    background-color: #0003FF;
     .leftLogin {
-        width: 50vw;
+        width: 57vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        color: #000;
-        // border-right: #000 7px solid;
 
         .nameLogin {
             font-size: 10vw;
             font-weight: 300;
+            font-weight: 600;
         }
 
         .taglineLogin {
@@ -27,30 +27,50 @@
             font-size: 5vh;
             font-weight: 300;
             justify-content: left;
+            padding-right: 60px;
         }
     }
 
     .rightLogin {
-        width: 50vw;
+        width: 43vw;
         height: 100vh;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+row-gap: 50px;
         button {
             margin-left: 5vw;
             width: 20vw;
             height: 10vh;
-            color: #FFD101ff;
+            color: #EFEFEF;
             background-color: #000;
             border-radius: 20px;
             font-size: 2vw;
         }
 
         button:hover{
-            color: #000000;
-            background-color: #FFD101ff;;
+            color: #0003FF;
+            background-color: #EFEFEF;
+        }
+
+        .btn2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            margin-left: 5vw;
+            width: 20vw;
+            height: 10vh;
+            color: #0003FF;
+            background-color: #EFEFEF;
+            border-radius: 20px;
+            font-size: 2vw;
+        }
+
+        .btn2:hover{
+            color: #EFEFEF;
+            background-color: #000;
         }
     }
 }
