@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from '../Header/Header'
-import ProfileContainer from '../Profile/ProfileContainer'
+import React from 'react';
+import Header from '../Header/Header';
+import ProfileContainer from '../Profile/ProfileContainer';
 
-const Profile = () => {
+const Profile: React.FC = () => {
     return (
-        <div>
+        <div className='profile'>
             <Header />
             <ProfileContainer />
         </div>
-    )
-}
+    );
+};
 
-export default Profile
+export default Profile;

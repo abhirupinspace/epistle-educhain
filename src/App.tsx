@@ -5,6 +5,7 @@ import Login from './components/PageComponents/Login';
 import SubmitArticle from './components/PageComponents/SubmitArticle';
 import ArticleFarm from './components/PageComponents/ArticleFarm';
 import Profile from './components/PageComponents/Profile';
+import DaoDashboard from './components/PageComponents/DaoDashboard';
 // import SubmissionForm from './components/SubmissionNewsComponent/SubmissionForm';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/submitArticle' element={<SubmitArticle />} />
 				<Route path='/articleFarm' element={<ArticleFarm />} />
 				<Route path='/profile' element={<Profile />} />
+				<Route path='/mydao' element={<DaoDashboard />} />
 			</Routes>
 		</BrowserRouter>
 	);

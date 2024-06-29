@@ -1,0 +1,78 @@
+// DaoDashboard.scss
+
+// DaoDashboard.scss
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$bg-color: #f2f2f2;
+$font-color: #333;
+
+.header {
+    
+    font-family: "Josefin Sans", sans-serif;
+    width: 100vw;
+    height: 9vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+
+    .title {
+        margin-left: 3vw;
+        font-size: 2.8vw;
+        color: #ffd101;
+    }
+
+    .buttons {
+        margin-left: auto;
+        /* Adjusted to push buttons to the right */
+        width: 50vw;
+        display: flex;
+        justify-content: flex-end;
+        /* Centering adjusted to right align */
+        align-items: center;
+        gap: 2vw;
+    }
+}
+
+.dao-dashboard {
+    background-image: url(../assets/bg.png);
+    font-family: Arial, sans-serif;
+    background-color: $bg-color;
+    padding: 20px;
+
+    .dashboard-header {
+        background-color: $primary-color;
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .dashboard-section {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__content {
+            // Add styles for section content
+        }
+    }
+
+    .dashboard-footer {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

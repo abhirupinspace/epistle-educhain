@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../scss/Dashboard.scss';
 import { Line } from 'react-chartjs-2';
+import { Chart, registerables, CategoryScale } from 'chart.js';
+Chart.register(...registerables, CategoryScale);
+
 import engagementData from '../../data/engagementData.json';
 import BigContainer from '../DashboardComponents/BigContainer';
 import SmallContainer from '../DashboardComponents/SmallContainer';
@@ -14,39 +17,53 @@ const Dashboard: React.FC = () => {
         <div className='left'>
           <BigContainer name='BROWSE NEWS' quickFarm={false} />
 
-
-          
-          {
-          /* <div className="lineChart">
-            <Line
-              className='lineChart'
-              data={{
-                labels: engagementData.map((data) => data.label),
-                datasets: [
-                  {
-                    label: 'Engagement',
-                    data: engagementData.map((data) => data.revenue),
-                    backgroundColor: '#FFD101ff',
-                    borderColor: '#FFD101ff',
-                  },
-                ],
-              }}
-              options={{
-                elements: {
-                  line: {
-                    tension: 0.5,
-                  },
-                },
-                plugins: {
-                  title: {
-                    display: true,
-                    text: 'Monthly Revenue & Cost',
-                  },
-                },
-              }}
-            />
-          </div> */
+      <div className="lineChart">
+      <Line
+        className='lineChart'
+        data={{
+          labels: engagementData.map((data) => data.label),
+          datasets: [
+            {
+              label: 'Engagement',
+              data: engagementData.map((data) => data.revenue),
+              backgroundColor: 'rgba(0, 0, 0, 0)',
+              borderColor: '#FFD101ff',
+              fill: false
+            },
+          ],
+        }}
+        options={{
+          elements: {
+            line: {
+              tension: 0.5,
+            },
+          },
+          plugins: {
+            title: {
+              display: true,
+              text: 'Monthly Reviews',
+              fullSize: true
+            },
+          },
+          layout: {
+            padding: 20
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              grid: {
+                display: false
+              }
+            }
           }
+        }}
+      />
+    </div>
+
         </div>
         <div className='right'>
           <BigContainer name='QUICK FARMING' quickFarm={true} />

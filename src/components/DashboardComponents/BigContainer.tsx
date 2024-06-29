@@ -1,18 +1,24 @@
 import React from 'react';
 import "../../scss/BigContainer.scss"
-
+import { useNavigate } from 'react-router-dom';
 interface BigContainerProps {
     name: string;
-    quickFarm: boolean;
 }
 
-const BigContainer: React.FC<BigContainerProps> = ({ name, quickFarm }) => {
+const BigContainer: React.FC<BigContainerProps> = ({ name }) => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        if (name === 'BROWSE NEWS') {
+            navigate('/articleFarm');
+        }
+    };
+
     return (
-        <div className='container'>
-            <div className="name">{name}</div>
-            {quickFarm && <div>TIME LEFT: 00:03:21</div>}
+        <div className='container' onClick={handleClick}>
+            {name}
         </div>
     );
-};
+}
 
 export default BigContainer;

@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <div className='header'>
       <div className='title'>AALOO</div>
       <div className='buttons'>
-        <Button name='Proposals' />
+        <Button name='My DAO' />
         <Button name='Profile' />
         <ConnectButton client={client} />
       </div>

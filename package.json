@@ -9,9 +9,13 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "@thirdweb-dev/storage": "^2.0.15",
+    "chart.js": "^4.4.3",
     "react": "^18.3",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
     "thirdweb": "^5"
