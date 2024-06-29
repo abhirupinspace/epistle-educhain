@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { FaRegThumbsUp, FaRegThumbsDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import axios from 'axios';
+import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import cancer from "../../assets/cancer.jpeg";
 import '../../scss/ShowNewsSmall.scss';
 

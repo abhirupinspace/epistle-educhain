@@ -1,0 +1,29 @@
+.newsFullPage{
+    background-image: url(../assets/bg.png);
+    .newspage{
+        width: 100vw;
+        font-family: "Josefin Sans", sans-serif;
+        display: flex;
+        min-height: 100vh;
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+            width: 60vw;
+            padding-left: 20px;
+            .heading{
+                font-size: 3rem;
+            }
+            .subheading{
+                font-size: 2rem;
+            }
+            .description{
+                font-size: 1.5rem;
+                line-break:auto;
+            }
+        }
+        .right{
+
+        }
+    }
+}
