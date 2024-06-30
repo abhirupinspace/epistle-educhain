@@ -17,7 +17,7 @@ const getAllArticles = async (req, res) => {
 
   const getArticlesById = async (req, res) => {
     try {
-      const Articles = await Articles.findById(req.params.id);
+      const Articles = await Article.findById(req.params.id);
       
       if (!Articles) {
         return res.status(404).json({ message: 'Articles not found' });
@@ -39,6 +39,8 @@ const getAllArticles = async (req, res) => {
     try {
       const newArticles = new Article({heading, subheading, description, genre, location, link, uploadMedia});
       newArticles.time = new Date();
+      newArticles.upVote = 0;
+      newArticles.downVote = 0;
       const Articles = await newArticles.save();
       res.status(201).json(Articles);
     } catch (err) {
@@ -47,18 +49,38 @@ const getAllArticles = async (req, res) => {
     }
   };
 
-  const updateArticles = async (req, res) => {
-    const { title, content } = req.body;
+  const upVoteArticles = async (req, res) => {
   
     try {
-      let Articles = await Articles.findById(req.params.id);
+      let Articles = await Article.findById(req.params.id);
   
       if (!Articles) {
         return res.status(404).json({ message: 'Articles not found' });
       }
   
-      Articles.title = title;
-      Articles.content = content;
+      Articles.upvote += 1;
+  
+      Articles = await Articles.save();
+      res.json(Articles);
+    } catch (err) {
+      console.error(err.message);
+      if (err.kind === 'ObjectId') {
+        return res.status(404).json({ message: 'Articles not found' });
+      }
+      res.status(500).send('Server Error');
+    }
+  };
+  
+  const downVoteArticles = async (req, res) => {
+  
+    try {
+      let Articles = await Article.findById(req.params.id);
+  
+      if (!Articles) {
+        return res.status(404).json({ message: 'Articles not found' });
+      }
+  
+      Articles.downvote += 1;
   
       Articles = await Articles.save();
       res.json(Articles);
@@ -92,6 +114,7 @@ const getAllArticles = async (req, res) => {
     getAllArticles,
     getArticlesById,
     createArticles,
-    updateArticles,
+    upVoteArticles,
+    downVoteArticles,
     deleteArticles,
   };

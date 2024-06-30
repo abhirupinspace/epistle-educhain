@@ -32,6 +32,14 @@ const articleSchema = new mongoose.Schema({
     uploadMedia : {
         type: String,
         required : true
+    },
+    upVote : {
+        type : Number,
+        required : true
+    },
+    downVote : {
+        type : Number,
+        required : true
     }
 });
 
