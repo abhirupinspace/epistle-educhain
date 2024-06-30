@@ -1,6 +1,6 @@
 # **Epistle: Decentralized News Aggregation Platform**
 
-Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. NewsChain aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
+Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. Epistle aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
 
 ![Broadcast](https://github.com/Automattic/mongoose/assets/108277454/186200b0-24c6-41ba-af01-73cd916242db)
 
@@ -13,12 +13,10 @@ Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized new
 4. [Installation](#installation)
 5. [Usage](#usage)
 6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
 
 ## **Overview**
 
-In a world where news is often centralized and biased, NewsChain offers a decentralized alternative that emphasizes local relevance and community engagement. Built on a robust blockchain framework, NewsChain allows users to submit, upvote, or downvote news articles, ensuring that the most relevant news rises to the top.
+In a world where news is often centralized and biased, *Epistle* offers a decentralized alternative that emphasizes local relevance and community engagement. Built on [**avalanche blockchain**](-), Epistle allows users to submit, upvote, or downvote news articles, ensuring that the most relevant news rises to the top.
 
 ## **Key Features**
 
@@ -44,17 +42,17 @@ In a world where news is often centralized and biased, NewsChain offers a decent
 
 ## **Getting Started**
 
-To get started with NewsChain, follow these simple steps:
+To get started with Epistle, follow these simple steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/newschain.git
-    cd newschain
+    git clone https://github.com/abhirupinspace/epistle-h4b-final-hwn.git
+    cd Backend (to run the backend server)
     ```
 
 2. **Install Dependencies**:
     ```bash
-    npm install
+    npm i -g yarn
     ```
 
 3. **Set Up Environment Variables**:
@@ -65,67 +63,58 @@ To get started with NewsChain, follow these simple steps:
 
 4. **Start the Application**:
     ```bash
-    npm start
+    yarn run dev
     ```
 
 5. **Access the Application**:
-    - Open your browser and navigate to `http://localhost:3000` to start using NewsChain.
+    - Open your browser and navigate to `http://localhost:3000` to start using Epistle.
 
 ## **Installation**
 
-To install NewsChain, follow the [Getting Started](#getting-started) steps above. Ensure that you have Node.js and npm installed on your system.
+To install Epistle, follow the [Getting Started](#getting-started) steps above. Ensure that you have Node.js and npm installed on your system.
 
 ## **Usage**
 
 ### **Submitting News**
 
-1. **Log in** to your NewsChain account.
+1. **Log in** to your Epistle account by your wallet or google.
 2. Navigate to the **Submit News** section.
 3. Fill in the details of the news article, including title, content, and location.
-4. Click **Submit** to add the article to the NewsChain network.
+4. Click **Submit** to add the article to the Epistle network.
 
 ### **Voting on News**
 
-1. Browse the **News Feed** to find articles of interest.
+1. Click the **Browse News** to find articles of interest.
 2. Click the **Upvote** or **Downvote** button to vote on an article.
 3. Your vote is recorded and will influence the article's visibility and credibility.
 
 ### **Viewing Local News**
 
-- Use the **Local News** tab to view news articles relevant to your geographic area.
+- Use the **Browse News** tab to view news articles relevant to your geographic area.
 - Articles are ranked based on community votes and relevance to the local area.
 
 ## **Contributing**
 
-We welcome contributions to NewsChain! If you would like to contribute, please follow these steps:
+We welcome contributions to Epistle! If you would like to contribute, please follow these steps:
 
 1. **Fork the repository** to your own GitHub account.
 2. **Create a new branch** for your feature or bug fix.
 3. **Make your changes** and commit them with descriptive messages.
 4. **Push your changes** to your forked repository.
-5. **Submit a pull request** to the `main` branch of the NewsChain repository.
+5. **Submit a pull request** to the `main` branch of the Epistle repository.
 
 For more detailed instructions, please refer to our [Contributing Guide](CONTRIBUTING.md).
 
-## **License**
 
-NewsChain is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## **Contact**
 
-If you have any questions, suggestions, or feedback, feel free to reach out:
-
-- **Email**: support@newschain.io
-- **Twitter**: [@newschain_io](https://twitter.com/newschain_io)
-- **GitHub Issues**: [Create an Issue](https://github.com/yourusername/newschain/issues)
-
-We look forward to your contributions and support in making NewsChain the go-to platform for decentralized, community-driven news.
+We look forward to your contributions and support in making Epistle the go-to platform for decentralized, community-driven news.
 
 ---
 
-Thank you for being part of the NewsChain community! 🌐📰
+Thank you for being part of the Epistle community! 🌐📰
 
 ---
 
 ### **Disclaimer**
-*NewsChain is a decentralized platform and does not control or endorse any of the content submitted by users. Please ensure that you follow ethical guidelines and verify the credibility of any news articles before sharing or voting.*
+*Epistle is a decentralized platform and does not control or endorse any of the content submitted by users. Please ensure that you follow ethical guidelines and verify the credibility of any news articles before sharing or voting.*
