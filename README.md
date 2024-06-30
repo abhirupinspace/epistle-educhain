@@ -1,10 +1,10 @@
-![Uploading WhatsApp Image 2024-06-30 at 07.53.07_1714155e.jpg…]()
+
 
 # **Epistle: Decentralized News Aggregation Platform**
 
 Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. Epistle aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
 
-![Broadcast](https://github.com/Automattic/mongoose/assets/108277454/186200b0-24c6-41ba-af01-73cd916242db)
+
 
 
 ## **Table of Contents**
