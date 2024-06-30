@@ -60,7 +60,6 @@ To get started with Epistle, follow these simple steps:
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/abhirupinspace/epistle-h4b-final-hwn.git
-    cd Backend (to run the backend server)
     ```
 
 2. **Install Dependencies**:
@@ -79,7 +78,14 @@ To get started with Epistle, follow these simple steps:
     yarn run dev
     ```
 
-5. **Access the Application**:
+5. **Start the server in a new terminal**:
+    ```bash
+    cd Backend
+    npm i
+    npm run dev
+    ```
+
+7. **Access the Application**:
     - Open your browser and navigate to `http://localhost:3000` to start using Epistle.
 
 ## **Installation**
