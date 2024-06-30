@@ -1,3 +1,4 @@
+![1](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/2aa126bc-c253-48be-9c97-bf890e83fb4d)
 
 
 # **Epistle: Decentralized News Aggregation Platform**
@@ -16,8 +17,6 @@ Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized new
 5. [Usage](#usage)
 6. [Contributing](#contributing)
 
-At first visit our Logo:
-![1](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/2aa126bc-c253-48be-9c97-bf890e83fb4d)
 
 
 
