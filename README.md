@@ -2,7 +2,8 @@
 
 Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. NewsChain aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
 
-![Uploading Broadcast.jpg…]()
+![Broadcast](https://github.com/Automattic/mongoose/assets/108277454/186200b0-24c6-41ba-af01-73cd916242db)
+
 
 ## **Table of Contents**
 
