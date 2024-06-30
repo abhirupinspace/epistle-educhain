@@ -1,8 +1,8 @@
-# **NewsChain: Decentralized News Aggregation Platform**
+# **Epistle: Decentralized News Aggregation Platform**
 
-Welcome to **NewsChain**, the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. NewsChain aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
+Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized news aggregation platform where you can submit news, vote on articles, and ensure local relevance through blockchain technology. NewsChain aims to revolutionize the way we consume news by empowering communities to highlight and validate news articles that matter most to them.
 
-![NewsChain Banner](assets/newschain-banner.png) <!-- Add a relevant image banner if available -->
+![Uploading Broadcast.jpg…]()
 
 ## **Table of Contents**
 
