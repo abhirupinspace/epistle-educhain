@@ -16,18 +16,24 @@ Welcome to [**Epistle**](https://epistle.framer.website/), the decentralized new
 5. [Usage](#usage)
 6. [Contributing](#contributing)
 
+At first visit our Logo:
+![1](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/2aa126bc-c253-48be-9c97-bf890e83fb4d)
+
+
+
+
 ## **Overview**
 
 In a world where news is often centralized and biased, *Epistle* offers a decentralized alternative that emphasizes local relevance and community engagement. Built on [**avalanche blockchain**](-), Epistle allows users to submit, upvote, or downvote news articles, ensuring that the most relevant news rises to the top.
+
+See the Webpage: 
+![Webpage Pic](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/1ea69b95-3833-403f-af37-f81f70f594ca)
 
 ## **Key Features**
 
 ### **1. Blockchain-Based Platform**
 - **Decentralized**: Utilizes blockchain technology to provide a transparent and tamper-proof news aggregation system.
-- **Secure**: Ensures the integrity of news articles and voting through cryptog![1](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/2aa126bc-c253-48be-9c97-bf890e83fb4d)
-![Webpage Pic](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/1ea69b95-3833-403f-af37-f81f70f594ca)
-![WalletConnectImg](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/4612285b-4b3b-49bb-8f0d-d931ad7fc6f7)
-raphic methods.
+- **Secure**: Ensures the integrity of news articles and voting through cryptographic methods.
 
 ### **2. News Submission**
 - **User-Generated Content**: Anyone can submit news articles on various topics.
@@ -44,6 +50,9 @@ raphic methods.
 ### **5. Transparency and Accountability**
 - **Immutable Records**: All news submissions and votes are recorded on the blockchain, providing a transparent and traceable history.
 - **Anonymity and Privacy**: Users can participate anonymously, with no fear of data breaches or privacy violations.
+
+
+![WalletConnectImg](https://github.com/abhirupinspace/epistle-h4b-final-hwn/assets/139789382/4612285b-4b3b-49bb-8f0d-d931ad7fc6f7)
 
 ## **Getting Started**
 
