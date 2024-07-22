@@ -1,120 +1,101 @@
 const Article = require('../models/article.model.js');
 
-// const filteredArticles = allArticles.filter(article => {
-//     return article.title.includes(searchText) || article.content.includes(searchText);
-// });
-
+// Function to find article by ID and handle errors
+const findArticleById = async (id, res) => {
+  try {
+    const article = await Article.findById(id);
+    if (!article) {
+      return res.status(404).json({ message: 'Article not found' });
+    }
+    return article;
+  } catch (err) {
+    console.error(err.message);
+    if (err.kind === 'ObjectId') {
+      return res.status(404).json({ message: 'Article not found' });
+    }
+    res.status(500).send('Server Error');
+  }
+};
 
 const getAllArticles = async (req, res) => {
-    try {
-      const Articles = await Article.find();
-      res.json(Articles);
-    } catch (err) {
-      console.error(err.message);
-      res.status(500).send('Server Error');
-    }
-  };
+  try {
+    const articles = await Article.find();
+    res.json(articles);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+};
 
-  const getArticlesById = async (req, res) => {
-    try {
-      const Articles = await Article.findById(req.params.id);
-      
-      if (!Articles) {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-      
-      res.json(Articles);
-    } catch (err) {
-      console.error(err.message);
-      if (err.kind === 'ObjectId') {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-      res.status(500).send('Server Error');
-    }
-  };
-  
-  const createArticles = async (req, res) => {
-    const { heading, subheading, description, genre, location, link, uploadMedia} = req.body;
-  
-    try {
-      const newArticles = new Article({heading, subheading, description, genre, location, link, uploadMedia});
-      newArticles.time = new Date();
-      newArticles.upVote = 0;
-      newArticles.downVote = 0;
-      const Articles = await newArticles.save();
-      res.status(201).json(Articles);
-    } catch (err) {
-      console.error(err.message);
-      res.status(500).send('Server Error');
-    }
-  };
+const getArticleById = async (req, res) => {
+  const article = await findArticleById(req.params.id, res);
+  if (article) res.json(article);
+};
 
-  const upVoteArticles = async (req, res) => {
-  
-    try {
-      let Articles = await Article.findById(req.params.id);
-  
-      if (!Articles) {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-  
-      Articles.upvote += 1;
-  
-      Articles = await Articles.save();
-      res.json(Articles);
-    } catch (err) {
-      console.error(err.message);
-      if (err.kind === 'ObjectId') {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-      res.status(500).send('Server Error');
+const createArticle = async (req, res) => {
+  const { heading, subheading, description, genre, location, link, uploadMedia } = req.body;
+
+  try {
+    const newArticle = new Article({
+      heading,
+      subheading,
+      description,
+      genre,
+      location,
+      link,
+      uploadMedia,
+      time: new Date(),
+      upVote: 0,
+      downVote: 0
+    });
+
+    const article = await newArticle.save();
+    res.status(201).json(article);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+};
+
+const upVoteArticle = async (req, res) => {
+  const article = await findArticleById(req.params.id, res);
+  if (article) {
+    article.upVote = (article.upVote || 0) + 1;
+    await article.save();
+    res.json(article);
+  }
+};
+
+const downVoteArticle = async (req, res) => {
+  const article = await findArticleById(req.params.id, res);
+  if (article) {
+    article.downVote = (article.downVote || 0) + 1;
+    await article.save();
+    res.json(article);
+  }
+};
+
+const deleteArticle = async (req, res) => {
+  try {
+    const article = await Article.findByIdAndDelete(req.params.id);
+    if (!article) {
+      return res.status(404).json({ message: 'Article not found' });
     }
-  };
-  
-  const downVoteArticles = async (req, res) => {
-  
-    try {
-      let Articles = await Article.findById(req.params.id);
-  
-      if (!Articles) {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-  
-      Articles.downvote += 1;
-  
-      Articles = await Articles.save();
-      res.json(Articles);
-    } catch (err) {
-      console.error(err.message);
-      if (err.kind === 'ObjectId') {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-      res.status(500).send('Server Error');
+    res.json({ message: 'Article removed' });
+  } catch (err) {
+    console.error(err.message);
+    if (err.kind === 'ObjectId') {
+      return res.status(404).json({ message: 'Error occurred' });
     }
-  };
-  
-  const deleteArticles = async (req, res) => {
-    try {
-      const Articles = await Articles.findByIdAndDelete(req.params.id);
-  
-      if (!Articles) {
-        return res.status(404).json({ message: 'Articles not found' });
-      }
-      res.json({ message: 'Articles removed' });
-    } catch (err) {
-      console.error(err.message);
-      if (err.kind === 'ObjectId') {
-        return res.status(404).json({ message: 'Error occurred' });
-      }
-      res.status(500).send('Server Error');
-    }
-  };
-  
-  module.exports = {
-    getAllArticles,
-    getArticlesById,
-    createArticles,
-    upVoteArticles,
-    downVoteArticles,
-    deleteArticles,
-  };
+    res.status(500).send('Server Error');
+  }
+};
+
+module.exports = {
+  getAllArticles,
+  getArticleById,
+  createArticle,
+  upVoteArticle,
+  downVoteArticle,
+  deleteArticle,
+};

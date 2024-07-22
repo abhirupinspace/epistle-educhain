@@ -12,6 +12,9 @@ app.use('/api', articleRoutes);
 app.use('/api', pointerRoutes);
 // app.use('/api', userRoutes);
 
+// const deleteRoutes = require('./deleteAllArticles.js'); //to clear off the dataset of articles
+// app.use('/api', deleteRoutes); // 
+
 app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;

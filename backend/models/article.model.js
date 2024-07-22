@@ -1,46 +1,51 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const articleSchema = new mongoose.Schema({
-    heading : {
-        type: String,
-        required : true
-    },
-    subheading : {
-        type: String,
-        required : true
-    },
-    description : {
-        type: String,
-        required : true
-    },
-    genre : {
-        type: String,
-        required : true
-    },
-    location : {
-        type: String,
-        required : true
-    },
-    time : {
-        type: Date,
-        required : true
-    },
-    link : {
-        type: String,
-        required : false
-    },
-    uploadMedia : {
-        type: String,
-        required : true
-    },
-    upVote : {
-        type : Number,
-        required : true
-    },
-    downVote : {
-        type : Number,
-        required : true
-    }
+const articleSchema = new Schema({
+  heading: {
+    type: String,
+    required: true
+  },
+  subheading: {
+    type: String,
+    required: false
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  genre: {
+    type: String,
+    required: true
+  },
+  location: {
+    type: String,
+    required: true
+  },
+  link: {
+    type: String,
+    required: false
+  },
+  uploadMedia: {
+    type: String,
+    required: false
+  },
+  time: {
+    type: Date,
+    default: Date.now
+  },
+  upVote: {
+    type: Number,
+    default: 0,
+    required: true
+  },
+  downVote: {
+    type: Number,
+    default: 0,
+    required: true
+  }
 });
 
-module.exports = mongoose.model("Article" , articleSchema);
+const Article = mongoose.model('Article', articleSchema);
+
+module.exports = Article;
